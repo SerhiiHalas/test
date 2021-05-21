@@ -1,6 +1,8 @@
 let money = +prompt("Ваш бюджет на месяц? Serega pes");
 let time = prompt("Введите дату в формате YYYY-MM-DD");
 
+let branchValue = "develop";
+
 let appData = {
     budget : money,
     timeData : time,
