@@ -1,4 +1,4 @@
-let money = +prompt("Ваш бюджет на месяц? Darova Serega");
+let money = +prompt("Ваш бюджет на месяц? Serega pes");
 let time = prompt("Введите дату в формате YYYY-MM-DD");
 
 let appData = {
