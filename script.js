@@ -1,7 +1,6 @@
-let money = +prompt("Ваш бюджет на месяц? Serega pes");
+let money = +prompt("Ваш бюджет на месяц?");
 let time = prompt("Введите дату в формате YYYY-MM-DD");
 
-let branchValue = "develop";
 
 let appData = {
     budget : money,
@@ -13,12 +12,6 @@ let appData = {
 };
 
 
-let a1 = prompt("Введите обязательную статью расходов в этом месяце", ""),
-    a2 = prompt("Во сколько обойдется?", ""),
-    a3 = prompt("Введите обязательную статью расходов в этом месяце", ""),
-    a4 = prompt("Во сколько обойдется?", "");
-
-
 
 for (let i = 0; i < 2; i++) {
     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
@@ -27,10 +20,10 @@ for (let i = 0; i < 2; i++) {
         console.log("done") ;
         appData.expenses[a] = b ;
  } else{
-
+    i = i -1 ;
  }
 }
-appData.moneyPerDay = appData.budjet / 30 ;
+appData.moneyPerDay = appData.budget / 30 ;
 
 alert("Budget per day:" + appData.moneyPerDay);
 
